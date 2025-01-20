@@ -1,0 +1,91 @@
+body {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #ebf4ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+
+  #weatherForm {
+      width: 600px;
+      max-width: 90%;
+      text-align: center;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 60px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      transition: all 0.3s ease;
+
+      &:hover {
+          box-shadow: 0 8px 80px rgba(0, 0, 0, 0.15);
+      }
+
+      form {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+      }
+
+      input[type="text"] {
+          width: 60%;
+          padding: 12px 20px;
+          font-size: 1em;
+          border: none;
+          border-radius: 25px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          transition: box-shadow 0.3s ease;
+
+          &:focus {
+              outline: none;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+          }
+      }
+
+      button {
+          width: 30%;
+          padding: 12px 25px;
+          font-size: 1em;
+          border: none;
+          border-radius: 25px;
+          background-color: #4A90E2;
+          color: white;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: background-color 0.3s;
+
+          &:hover {
+              background-color: #3b70b4;
+          }
+
+          &:active {
+              background-color: #325b95;
+          }
+      }
+
+      #weatherInfo {
+        text-align: center;
+        
+        h2 {
+            margin-bottom: 10px;
+            font-size: 2.2em;
+        }
+    
+        p {
+            margin: 5px 0;
+    
+            &:first-of-type {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+    
+            &:last-of-type {
+                font-size: 1.2em;  
+                margin: 10px 0 0 0;
+            }
+        }
+    }
+  }
+}
