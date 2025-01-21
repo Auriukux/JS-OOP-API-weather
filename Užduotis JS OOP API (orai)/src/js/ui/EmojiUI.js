@@ -1,4 +1,3 @@
-// EmojiUI.js
 export default class EmojiUI {
     getEmoji(temp) {
         if (temp > 30) return '🔥 Vasara atėjo! Arba... gal tiesiog jūsų krosnis sprogo?';

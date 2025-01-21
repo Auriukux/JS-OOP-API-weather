@@ -1,4 +1,3 @@
-// main.js
 import WeatherApi from './api/WeatherApi';
 import EmojiUI from './ui/EmojiUI';
 import { convertKelvinToCelsius } from './utils/TemperatureUtils';

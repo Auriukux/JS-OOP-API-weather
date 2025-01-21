@@ -1,4 +1,3 @@
-// WeatherApi.js
 export default class WeatherApi {
     async fetchWeather(city) {
         const apiKey = process.env.OPEN_WEATHER_API_KEY;
